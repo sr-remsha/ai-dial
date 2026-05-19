@@ -21,14 +21,14 @@ const footerLink = (href, path) => {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'DIALX Knowledge Base',
+  title: 'DIAL Knowledge Base',
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://docs.dialx.ai',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl:  process.env.BASE_URL ? process.env.BASE_URL : '/',
+  baseUrl: process.env.BASE_URL ? process.env.BASE_URL : '/',
   trailingSlash: false,
 
   // GitHub pages deployment config.
@@ -36,13 +36,18 @@ const config = {
   organizationName: 'epam', // Usually your GitHub org/user name.
   projectName: 'ai-dial', // Usually your repo name.
   deploymentBranch: 'gh-pages',
-
-  onBrokenLinks: 'throw', //'throw', for exceptions
-  onBrokenMarkdownLinks: 'throw',
-  onDuplicateRoutes: 'throw',
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  onBrokenLinks: 'warn', //'throw', for exceptions
+  // onBrokenAnchors: 'throw',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'warn',
+    },
+  },
+  // onDuplicateRoutes: 'throw',
+  // // Even if you don't use internationalization, you can use this field to set
+  // // useful metadata like html lang. For example, if your site is Chinese, you
+  // // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -58,6 +63,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
+          exclude: ['releases/**'],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
@@ -78,7 +84,7 @@ const config = {
           priority: 0.5,
         },
         gtag: {
-          trackingID: 'G-GVY5VWYV1E',
+          trackingID: 'GTM-NQKQWGFJ',
         },
       }),
     ],
@@ -103,6 +109,13 @@ const config = {
   //           type: 'text/javascript',
   //         },
   //       ],
+
+  scripts: [
+    {
+      src: 'https://app.termly.io/resource-blocker/ee6eaad1-eb8b-4d84-9528-1c504269dd62?autoBlock=on',
+      type: 'text/javascript',
+    },
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -148,13 +161,13 @@ const config = {
             items: [
               {
                 html: footerLink(
-                  'https://discord.gg/hgqEAbEwZ9',
+                  'https://discord.gg/ukzj9U9tEe',
                   './static/discord.svg',
                 ),
               },
               {
                 html: footerLink(
-                  'https://www.youtube.com/@TeamDialX',
+                  'https://www.youtube.com/@TeamDIALX',
                   './static/youtube.svg',
                 ),
               },

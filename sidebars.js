@@ -7,263 +7,111 @@ const sidebars = {
       label: 'Home', // sidebar label
     },
     {
-      type: 'doc',
-      id: 'quick-start',
-      label: 'Quick Start',
-    },
-    {
       type: 'category',
-      label: 'Platform',
+      label: 'Understand DIAL',
       items: [
         {
+          type: 'doc',
+          id: 'platform/architecture-and-concepts/vision',
+          label: 'What is DIAL',
+        },
+        {
           type: 'category',
-          label: 'Architecture & Concepts',
+          label: 'Architecture',
           items: [
-            {
-              type: 'doc',
-              id: 'platform/architecture-and-concepts/vision',
-              label: 'What is DIAL',
-            },
-            {
-              type: 'doc',
-              id: 'platform/architecture-and-concepts/concepts',
-              label: 'Main Concepts',
-            },
+
             {
               type: 'doc',
               id: 'platform/architecture-and-concepts/architecture',
               label: 'Architecture Highlights',
+            },            
+            {
+              type: 'doc',
+              id: 'platform/architecture-and-concepts/stack',
+              label: 'DIAL Stack',
             },
             {
               type: 'doc',
-              id: 'platform/architecture-and-concepts/components',
-              label: 'Platform Components',
+              id: 'platform/architecture-and-concepts/app-server',
+              label: 'Application Server',
             },
+            {
+              type: 'doc',
+              id: 'platform/architecture-and-concepts/unified-api-overview',
+              label: 'Unified API Overview',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Capabilities',
+          items: [
             {
               type: 'doc',
               id: 'platform/architecture-and-concepts/agentic-platform',
               label: 'Agentic Platform',
             },
+            {
+              type: 'doc',
+              id: 'platform/multimodality',
+              label: 'Multimodality',
+            },
+            {
+              type: 'doc',
+              id: 'platform/collaboration-intro',
+              label: 'Collaboration and Sharing',
+            },
           ],
         },
         {
-          type: 'doc',
-          id: 'platform/deployment-intro',
-          label: 'Deployment',
-        },
-        {
-          type: 'doc',
-          id: 'platform/supported-models',
-          label: 'AI Model Providers',
-        },
-        {
           type: 'category',
-          label: 'Core',
+          label: 'Security and Governance',
           items: [
             {
               type: 'doc',
-              id: 'platform/core/about-core',
-              label: 'About',
+              id: 'platform/architecture-and-concepts/authentication-and-access-control',
+              label: 'Authentication and Access Control',
             },
             {
               type: 'doc',
-              id: 'platform/core/auth-intro',
-              label: 'Authentication',
-            },
-            {
-              type: 'doc',
-              id: 'platform/core/access-control-intro',
-              label: 'Access & Cost Control',
-            },
-            {
-              type: 'doc',
-              id: 'platform/core/per-request-keys',
-              label: 'Per-Request Keys',
+              id: 'platform/core/token-limits-and-cost-control',
+              label: 'Usage Limits and Cost Control',
             },
             {
               type: 'doc',
               id: 'platform/core/privacy',
-              label: 'PII Compliance & Privacy',
-            },
-            {
-              type: 'doc',
-              id: 'platform/core/load-balancer',
-              label: 'Load Balancer',
-            },
-            {
-              type: 'doc',
-              id: 'platform/core/interceptors',
-              label: 'Interceptors',
+              label: 'Privacy',
             },
           ],
-        },
-        {
-          type: 'category',
-          label: 'Chat',
-          items: [
-            {
-              type: 'doc',
-              id: 'platform/chat/about-chat',
-              label: 'About',
-            },
-            {
-              type: 'doc',
-              id: 'platform/chat/marketplace',
-              label: 'Marketplace',
-            },
-            {
-              type: 'doc',
-              id: 'platform/chat/data-visualization-intro',
-              label: 'Data Visualization',
-            },
-          ],
-        },
-        {
-          type: 'doc',
-          id: 'platform/multimodality',
-          label: 'Multimodality',
-        },
-        {
-          type: 'doc',
-          id: 'platform/realtime-analytics-intro',
-          label: 'Analytics',
-        },
-        {
-          type: 'doc',
-          id: 'platform/collaboration-intro',
-          label: 'Collaboration',
-        },
-        {
-          type: 'doc',
-          id: 'platform/observability-intro',
-          label: 'Observability',
-        },
-        {
-          type: 'doc',
-          id: 'platform/high-load-performance',
-          label: 'Handling High Loads',
-        },
-        {
-          type: 'doc',
-          id: 'legal-and-compliance',
-          label: 'Compliance and Legal Q&A',
         },
       ],
     },
     {
       type: 'category',
-      label: 'Tutorials',
+      label: 'Building with DIAL',
       items: [
         {
-          type: 'doc',
-          id: 'tutorials/user-guide',
-          label: 'Chat User Guide',
-        },
-        {
           type: 'category',
-          label: 'Developers',
+          label: 'Apps',
           items: [
             {
-              type: 'category',
-              label: 'Run AI DIAL Locally',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/local-run/quick-start-with-application',
-                  label: 'Chat with Application',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/local-run/quick-start-model',
-                  label: 'Chat with OpenAI Model',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/local-run/quick-start-with-self-hosted-model',
-                  label: 'Chat with a Self-Hosted Model',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/local-run/quick-start-with-addon',
-                  label: 'Chat with Addon',
-                },
-              ],
+              type: 'doc',
+              id: 'platform/core/apps',
+              label: 'DIAL Apps Overview',
             },
             {
               type: 'category',
-              label: 'Working with Resources',
+              label: 'Custom Apps',
               items: [
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/work-with-resources/work-with-publications',
-                  label: 'Publications',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/work-with-resources/sharing',
-                  label: 'Sharing',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/work-with-resources/notifications',
-                  label: 'Notifications',
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Chat',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/chat/chat-objects',
-                  label: 'Custom Content in Chat',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/chat/localization',
-                  label: 'Chat Localization',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/chat/create-custom-visualizer',
-                  label: 'Create Visualizer',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/chat/chat-design',
-                  label: 'Design Structure',
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Apps Development',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/apps-development/adapter-dial',
-                  label: 'Local Development',
-                },
                 {
                   type: 'doc',
                   id: 'tutorials/developers/apps-development/enable-app',
-                  label: 'Enable Apps',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/apps-development/quick-app-configuration',
-                  label: 'How to Configure Quick App',
+                  label: 'Registering Apps in DIAL Core',
                 },
                 {
                   type: 'doc',
                   id: 'tutorials/developers/apps-development/custom-buttons',
                   label: 'Custom Buttons in Apps',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/developers/apps-development/auth-matrix',
-                  label: 'Auth Matrix',
                 },
                 {
                   type: 'category',
@@ -272,8 +120,88 @@ const sidebars = {
                     'tutorials/developers/apps-development/multimodality/dial-cookbook/examples/how_to_call_text_to_text_applications',
                     'tutorials/developers/apps-development/multimodality/dial-cookbook/examples/how_to_call_text_to_image_applications',
                     'tutorials/developers/apps-development/multimodality/dial-cookbook/examples/how_to_call_image_to_text_applications',
-                    'tutorials/developers/apps-development/multimodality/dial-cookbook/examples/how_to_call_dalle_3_with_configuration',
+                    'tutorials/developers/apps-development/multimodality/dial-cookbook/examples/how_to_call_gpt_image_1_with_configuration',
                   ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Quick Apps',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'tutorials/developers/apps-development/quick-app-configuration',
+                  label: 'Authoring Guide',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Extension Points',
+          items: [
+            {
+              type: 'doc',
+              id: 'platform/core/interceptors',
+              label: 'Interceptors',
+            },
+            {
+              type: 'category',
+              label: 'Adapters',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'platform/architecture-and-concepts/adapters',
+                  label: 'What are Adapters',
+                },
+                {
+                  type: 'doc',
+                  id: 'platform/supported-models',
+                  label: 'Supported Adapters',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Developer Tools',
+          items: [
+            {
+              type: 'category',
+              label: 'Chat Customization',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'tutorials/developers/chat/chat-objects',
+                  label: 'Custom Content in Chat',
+                },
+                {
+                  type: 'doc',
+                  id: 'platform/chat/data-visualization-intro',
+                  label: 'Data Visualization',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/developers/chat/create-custom-visualizer',
+                  label: 'Create Custom Visualizer',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/developers/chat/localization',
+                  label: 'Chat Localization',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/developers/chat/chat-design',
+                  label: 'Theming and Design',
+                },
+                {
+                  type: 'doc',
+                  id: 'platform/chat/marketplace',
+                  label: 'Marketplace',
                 },
               ],
             },
@@ -282,9 +210,266 @@ const sidebars = {
               label: 'Integrations',
               items: [
                 {
+                  type: 'category',
+                  label: 'Chatbot Integrations',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'tutorials/developers/integrations/msteams-bot',
+                      label: 'Integration with MS Teams',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'tutorials/developers/integrations/copilot-to-dial',
+                      label: 'Integration with MS Copilot',
+                    },
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Productivity Add-ins',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'tutorials/developers/integrations/ms-excel-addin',
+                      label: 'Integration with MS Excel',
+                    },
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Workflow Automation',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'tutorials/developers/integrations/n8n-integration',
+                      label: 'Integration with n8n',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Platform APIs and Resources',
+              items: [
+                {
                   type: 'doc',
-                  id: 'tutorials/developers/integrations/copilot-to-dial',
-                  label: 'Integration with MS Copilot',
+                  id: 'tutorials/developers/work-with-resources/work-with-publications',
+                  label: 'Publications API',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/developers/work-with-resources/sharing',
+                  label: 'Sharing API',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/developers/work-with-resources/notifications',
+                  label: 'Notifications',
+                },
+                {
+                  type: 'doc',
+                  id: 'platform/core/per-request-keys',
+                  label: 'Per-request Keys',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/developers/apps-development/auth-matrix',
+                  label: 'Auth Matrix for Apps',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Advanced Topics',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'tutorials/developers/prompt-caching',
+                  label: 'Prompt Caching',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Operating DIAL',
+      items: [
+        {
+          type: 'category',
+          label: 'Local Setup',
+          items: [
+            {
+              type: 'doc',
+              id: 'tutorials/developers/local-run/quick-start-model',
+              label: 'Docker Compose with Azure model',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/developers/local-run/quick-start-with-self-hosted-model-ollama',
+              label: 'Docker Compose with Ollama',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/developers/local-run/quick-start-with-self-hosted-model-vllm',
+              label: 'Docker Compose with vLLM',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/developers/local-run/quick-start-with-application',
+              label: 'Docker Compose with Application',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/developers/apps-development/adapter-dial',
+              label: 'DIAL-to-DIAL Adapter for Local Dev',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Cloud Deployment',
+          items: [
+            {
+              type: 'doc',
+              id: 'tutorials/devops/deployment/aws-deployment-guide',
+              label: 'AWS Deployment',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/devops/deployment/azure-deployment-guide',
+              label: 'Azure Deployment',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/devops/deployment/gcp-deployment-guide',
+              label: 'GCP Deployment',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/devops/deployment/azure-secrets',
+              label: 'Azure Secrets Deployment',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/devops/deployment/custom_apps_deployment',
+              label: 'Custom Apps Deployment',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/devops/deployment/quick_apps_deployment',
+              label: 'Quick Apps Deployment',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Model Deployment',
+          items: [
+            {
+              type: 'doc',
+              id: 'tutorials/devops/deployment/deployment-of-models/bedrock-model-deployment',
+              label: 'Bedrock Model Deployment',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/devops/deployment/deployment-of-models/openai-model-deployment',
+              label: 'OpenAI Model Deployment',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/devops/deployment/deployment-of-models/vertex-model-deployment',
+              label: 'Vertex Model Deployment',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/devops/use-databricks-model',
+              label: 'Databricks Model Deployment',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Configuration Reference',
+          items: [
+            {
+              type: 'doc',
+              id: 'tutorials/devops/configuration/configuration-guide',
+              label: 'Configuration',
+            },
+            {
+              type: 'doc',
+              id: 'platform/core/load-balancer',
+              label: 'Load Balancer',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/devops/configuration/enable-publications-chat',
+              label: 'Enable Publications',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Auth and Access Control',
+          items: [
+            {
+              type: 'doc',
+              id: 'tutorials/devops/auth-and-access-control/api-keys',
+              label: 'API Keys',
+            },
+            {
+              type: 'doc',
+              id: 'tutorials/devops/auth-and-access-control/jwt',
+              label: 'JWT Configuration',
+            },
+            {
+              type: 'category',
+              label: 'SSO/IDP Setup',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'tutorials/devops/auth-and-access-control/configure-idps/overview',
+                  label: 'Overview',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/devops/auth-and-access-control/configure-idps/auth0',
+                  label: 'Auth0',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/devops/auth-and-access-control/configure-idps/cognito',
+                  label: 'AWS Cognito',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/devops/auth-and-access-control/configure-idps/azureb2c',
+                  label: 'Azure AD B2C',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/devops/auth-and-access-control/configure-idps/entraID',
+                  label: 'Microsoft Entra ID',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/devops/auth-and-access-control/configure-idps/google',
+                  label: 'Google Identity',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/devops/auth-and-access-control/configure-idps/keycloak',
+                  label: 'Keycloak',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/devops/auth-and-access-control/configure-idps/okta',
+                  label: 'Okta',
                 },
               ],
             },
@@ -292,169 +477,309 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'DevOps',
+          label: 'Observability',
           items: [
-            {
-              type: 'category',
-              label: 'Deployment',
-              items: [
-                {
-                  type: 'link',
-                  label: 'Helm Deployment',
-                  href: 'https://github.com/epam/ai-dial-helm/tree/main/charts/dial/examples/generic/simple',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/devops/deployment/custom_apps_deployment',
-                  label: 'Custom Apps Deployment',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/devops/deployment/azure-secrets',
-                  label: 'Azure Secrets Deployment',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/devops/deployment/azure-deployment-guide',
-                  label: 'Azure Deployment Guide',
-                },
-                {
-                  type: 'category',
-                  label: 'Deployment of Models',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'tutorials/devops/deployment/deployment-of-models/openai-model-deployment',
-                      label: 'OpenAI Model Deployment',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'tutorials/devops/deployment/deployment-of-models/vertex-model-deployment',
-                      label: 'Vertex Model Deployment',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'tutorials/devops/deployment/deployment-of-models/bedrock-model-deployment',
-                      label: 'Bedrock Model Deployment',
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Configuration',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'tutorials/devops/configuration/configuration-guide',
-                  label: 'Configuration Guide',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/devops/configuration/realtime-analytics-config',
-                  label: 'Analytics Realtime Configuration',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/devops/configuration/enable-publications-chat',
-                  label: 'Enable Publications',
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Auth & Access Control',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'tutorials/devops/auth-and-access-control/programmatic-auth',
-                  label: 'Create API Keys',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/devops/auth-and-access-control/api-key-roles',
-                  label: 'API Keys Roles & Limits',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/devops/auth-and-access-control/chat-users-roles',
-                  label: 'JWT Roles & Limits',
-                },
-                {
-                  type: 'doc',
-                  id: 'tutorials/devops/auth-and-access-control/azure-ad-configuration',
-                  label: 'Azure AD Configuration',
-                },
-                {
-                  type: 'category',
-                  label: 'Configure IDPs',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'tutorials/devops/auth-and-access-control/configure-idps/overview',
-                      label: 'Overview',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'tutorials/devops/auth-and-access-control/configure-idps/auth0',
-                      label: 'Auth0',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'tutorials/devops/auth-and-access-control/configure-idps/cognito',
-                      label: 'AWS Cognito',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'tutorials/devops/auth-and-access-control/configure-idps/entraID',
-                      label: 'Microsoft Entra',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'tutorials/devops/auth-and-access-control/configure-idps/google',
-                      label: 'Google Identity',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'tutorials/devops/auth-and-access-control/configure-idps/keycloak',
-                      label: 'Keycloak',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'tutorials/devops/auth-and-access-control/configure-idps/okta',
-                      label: 'Okta',
-                    },
-                  ],
-                },
-              ],
-            },
             {
               type: 'doc',
               id: 'tutorials/devops/observability-config',
-              label: 'Observability',
+              label: 'Overview',
             },
             {
               type: 'doc',
-              id: 'tutorials/devops/use-databricks-model',
-              label: 'Use Databricks Models',
+              id: 'tutorials/devops/configuration/realtime-analytics-config',
+              label: 'Analytics Realtime Setup',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Production Readiness',
+          items: [
+            {
+              type: 'doc',
+              id: 'platform/high-load-performance',
+              label: 'Scaling',
+            },
+            {
+              type: 'doc',
+              id: 'platform/core/privacy',
+              label: 'Security Hardening',
             },
           ],
         },
       ],
     },
     {
-      type: 'link',
-      label: 'API Reference',
-      href: 'https://dialx.ai/dial_api',
+      type: 'category',
+      label: 'Administering DIAL',
+      items: [
+        {
+          type: 'doc',
+          id: 'tutorials/admin/introduction',
+          label: 'Admin Panel Overview',
+        },
+        {
+          type: 'category',
+          label: 'Admin Panel User Guide',
+          items: [
+            {
+              type: 'doc',
+              id: 'tutorials/admin/home',
+              label: 'Home',
+            },
+            {
+              type: 'category',
+              label: 'Entities',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/entities-models',
+                  label: 'Models',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/entities-applications',
+                  label: 'Applications',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/entities-toolsets',
+                  label: 'Toolsets',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/entities-interceptors',
+                  label: 'Interceptors',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/entities-routes',
+                  label: 'Routes',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Builders',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/builders-application-runners',
+                  label: 'Application Runners',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/builders-interceptor-templates',
+                  label: 'Interceptor Templates',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/builders-adapters',
+                  label: 'Adapters',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Assets',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/assets-applications',
+                  label: 'Applications',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/assets-toolsets',
+                  label: 'Toolsets',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/assets-prompts',
+                  label: 'Prompts',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/assets-files',
+                  label: 'Files',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Deployments',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/deployments-models',
+                  label: 'Model Servings',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/deployments-mcp',
+                  label: 'MCP Containers',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/deployments-interceptors',
+                  label: 'Interceptor Containers',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/deployments-adapters',
+                  label: 'Adapter Containers',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/deployments-images',
+                  label: 'Images',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Access Management',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/access-management-roles',
+                  label: 'Roles',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/access-management-keys',
+                  label: 'Keys',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/access-management-folders-storage',
+                  label: 'Folders Storage',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Approvals',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/approvals-application-publications',
+                  label: 'Application Publications',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/approvals-toolset-publications',
+                  label: 'Toolset Publications',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/approvals-prompt-publications',
+                  label: 'Prompt Publications',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/approvals-file-publications',
+                  label: 'File Publications',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Audit',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/telemetry-dashboard',
+                  label: 'Dashboard',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/telemetry-activity-audit',
+                  label: 'Activities',
+                },
+                {
+                  type: 'doc',
+                  id: 'tutorials/admin/telemetry-usage-log',
+                  label: 'Usage Log',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'doc',
+          id: 'legal-and-compliance',
+          label: 'Compliance and Legal FAQ',
+        },
+      ],
+    },
+    {
+      type: 'doc',
+      id: 'tutorials/user-guide',
+      label: 'Chat User Guide',
     },
     {
       type: 'category',
       label: 'Demos',
       items: [
         {
-          type: 'autogenerated',
-          dirName: 'video demos',
+          type: 'category',
+          label: 'Platform Overview',
+          items: [
+            {
+              type: 'doc',
+              id: 'video demos/dial-product-overview',
+              label: 'DIAL Overview',
+            },
+            {
+              type: 'doc',
+              id: 'video demos/Developers/interceptors',
+              label: 'Interceptors',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Chat Capabilities',
+          items: [
+            {
+              type: 'autogenerated',
+              dirName: 'video demos/1.Chat',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Apps and Agents',
+          items: [
+            {
+              type: 'autogenerated',
+              dirName: 'video demos/2.Applications',
+            },
+            {
+              type: 'autogenerated',
+              dirName: 'video demos/3.Developers/Applications',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Deployment and Admin',
+          items: [
+            {
+              type: 'doc',
+              id: 'video demos/dial-admin-panel',
+              label: 'DIAL Admin Panel',
+            },
+            {
+              type: 'autogenerated',
+              dirName: 'video demos/3.Developers/Deployment',
+            },
+            {
+              type: 'autogenerated',
+              dirName: 'video demos/3.Developers/Integrations',
+            },
+          ],
         },
       ],
     },

@@ -36,14 +36,14 @@ const config = {
   organizationName: 'epam', // Usually your GitHub org/user name.
   projectName: 'ai-dial', // Usually your repo name.
   deploymentBranch: 'gh-pages',
-  // onBrokenLinks: 'throw', //'throw', for exceptions
+  onBrokenLinks: 'warn', //'throw', for exceptions
   // onBrokenAnchors: 'throw',
-  // markdown: {
-  //   hooks: {
-  //     onBrokenMarkdownLinks: 'throw',
-  //     onBrokenMarkdownImages: 'throw',
-  //   },
-  // },
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'warn',
+    },
+  },
   // onDuplicateRoutes: 'throw',
   // // Even if you don't use internationalization, you can use this field to set
   // // useful metadata like html lang. For example, if your site is Chinese, you
